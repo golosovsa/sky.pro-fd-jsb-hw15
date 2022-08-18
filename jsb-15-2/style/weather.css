@@ -1,0 +1,75 @@
+.weather {
+    width: 116px;
+    height: 91px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 25px);
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow: 3px 3px 10px 1px rgba(0,0,0,.4);
+    padding: 8px;
+}
+
+.weather__item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.weather__item_box1 {
+    grid-column: 1 / span 2;
+}
+
+.weather__item_box2 {
+    grid-column: 3 / span 2;
+}
+
+.weather__item_box3 {
+    grid-column: 1 / span 3;
+}
+
+.weather__item_box4 {
+    grid-column: 4;
+}
+
+.weather__hidden {
+    display: none;
+}
+
+.weather__text {
+    font-family: sans;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.weather__input {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: transparent;
+    transition: background-color 0.3s ease-out;
+}
+
+.weather__input:hover{
+    background-color: rgba(200,200,255,0.3);
+}
+
+.weather__input:focus{
+    background-color: rgba(200,200,255,0.8);
+}
+
+.weather__input_city {
+    width: 75px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.fa-map {
+    color: red;
+}
+
+.fa-map-marked {
+    color: green;
+}

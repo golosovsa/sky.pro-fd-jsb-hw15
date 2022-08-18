@@ -1,0 +1,33 @@
+.suggest {
+    max-width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2px;
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow: 3px 3px 10px 1px rgba(0,0,0,.4);
+    padding: 8px;
+
+}
+
+.suggest__hidden {
+    display: none;
+}
+
+.suggest__item {
+    display: block;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: rgba(200,200,255,0.3);
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.suggest__item:hover {
+    background-color: rgba(200,200,255,0.8);
+    transition: background-color 0.3s ease-out;
+}

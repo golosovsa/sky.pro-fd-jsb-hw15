@@ -1,0 +1,144 @@
+.spinner {
+    background: transparent;
+    transform-style: preserve-3d;
+    perspective: 300px;
+    perspective-origin:center center;
+    width: 100px;
+    height: 100px;
+    transform: rotateY(35deg) rotateX(-3deg);
+}
+
+.spinner__side {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(135, 206, 235, 0.3);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 50px;
+    position:absolute;
+    left: 0;
+    top: 0;
+    transform: translateZ(-100px);
+    opacity: 0;
+}
+
+.spinner__icon {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.spinner__icon_1 {
+    background-image: url("https://openweathermap.org/img/w/01d.png");
+}
+
+.spinner__icon_2 {
+    background-image: url("https://openweathermap.org/img/w/02d.png");
+}
+
+.spinner__icon_3 {
+    background-image: url("https://openweathermap.org/img/w/03d.png");
+}
+
+.spinner__icon_4 {
+    background-image: url("https://openweathermap.org/img/w/04d.png");
+}
+
+.spinner__icon_5 {
+    background-image: url("https://openweathermap.org/img/w/09d.png");
+}
+
+.spinner__icon_6 {
+    background-image: url("https://openweathermap.org/img/w/10d.png");
+}
+
+.spinner__icon_7 {
+    background-image: url("https://openweathermap.org/img/w/11d.png");
+}
+
+.spinner__icon_8 {
+    background-image: url("https://openweathermap.org/img/w/13d.png");
+}
+
+.spinner__icon_9 {
+    background-image: url("https://openweathermap.org/img/w/50d.png");
+}
+
+.spinner__icon_10 {
+    background-image: url("https://openweathermap.org/img/w/01n.png");
+}
+
+.spinner__icon_11 {
+    background-image: url("https://openweathermap.org/img/w/02n.png");
+}
+
+.spinner__icon_12 {
+    background-image: url("https://openweathermap.org/img/w/03n.png");
+}
+
+.spinner__icon_13 {
+    background-image: url("https://openweathermap.org/img/w/04n.png");
+}
+
+.spinner__icon_14 {
+    background-image: url("https://openweathermap.org/img/w/09n.png");
+}
+
+.spinner__icon_15 {
+    background-image: url("https://openweathermap.org/img/w/10n.png");
+}
+
+.spinner__icon_16 {
+    background-image: url("https://openweathermap.org/img/w/11n.png");
+}
+
+.spinner__icon_17 {
+    background-image: url("https://openweathermap.org/img/w/13n.png");
+}
+
+.spinner__icon_18 {
+    background-image: url("https://openweathermap.org/img/w/50n.png");
+}
+
+.spinner__side_1 {
+    animation: animate-translate 6s linear 0s infinite normal forwards;
+}
+
+.spinner__side_2 {
+    animation: animate-translate 6s linear 1s infinite normal forwards;
+}
+
+.spinner__side_3 {
+    animation: animate-translate 6s linear 2s infinite normal forwards;
+}
+
+.spinner__side_4 {
+    animation: animate-translate 6s linear 3s infinite normal forwards;
+}
+
+.spinner__side_5 {
+    animation: animate-translate 6s linear 4s infinite normal forwards;
+}
+
+.spinner__side_6 {
+    animation: animate-translate 6s linear 5s infinite normal forwards;
+}
+
+@keyframes animate-translate {
+    0% {
+        transform: translateZ(-100px);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1.0;
+    }
+    80%{
+        opacity: 1.0;
+    }
+    100% {
+        transform: translateZ(100px);
+        opacity: 0;
+    }
+}
